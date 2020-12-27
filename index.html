@@ -38,7 +38,15 @@
                 <a-entity
                     id="bowser-model"
                     scale="0.0020081158386475125 0.0020081158386475125 0.0020081158386475125"
-                    animation-mixer="loop: repeat"
+                      <a-animation
+                          attribute="rotation"
+                          from="20 0 0"
+                          to="20 360 0"
+                          direction="alternate"
+                          dur="4000"
+                          repeat="indefinite"
+                          easing="ease">
+                      </a-animation>
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
